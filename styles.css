@@ -1,20 +1,93 @@
+body {
+  background-color: #001f2e;
+}
+
 .main-div {
+  background-color: chocolate;
+  border-radius: 35px;
   width: 350px;
+  margin: auto;
+  padding: 35px;
+  margin-top: 8%;
+}
+
+.title {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(255, 253, 240);
+  font-size: 70px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .calculator-div {
-  display: grid;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.num-input {
+  font-size: 30px;
+  height: 50px;
+  min-width: 60px;
+  padding-left: 12px;
   text-align: center;
+  border-radius: 15px;
+  border: none;
 }
 
 .buttons {
   align-items: center;
+  gap: 5px;
 }
 
 button {
-  width: 84.5px;
+  font-size: 30px;
+  background-color: #823800;
+  color: aliceblue;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 60px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+  transition: 350ms ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.5);
 }
 
 .count-button {
+  width: 94px;
+  background-color: #572703;
+}
+
+.result-div {
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
   width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding-left: 10px;
+  overflow-y: hidden;
+}
+
+.result-text {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(107, 32, 0);
+  font-size: 40px;
+  font-weight: 400;
+  margin-right: 8px;
+}
+
+.result-num {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(110, 55, 0);
+  font-size: 40px;
+  font-weight: 400;
 }

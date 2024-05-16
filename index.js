@@ -25,35 +25,32 @@ divideButton.onclick = function () {
   sign = "/";
 };
 
+function returnResult(yoursResult) {
+  if (yoursResult > 0) {
+    result.style.color = "green";
+  } else {
+    result.style.color = "red";
+  }
+
+  result.textContent = yoursResult;
+}
+
 countButton.onclick = function () {
   if (sign == "+") {
-    const plustButton = `${Number(
-      firstNum.value
-    )} ${sign} Number(secondNum.value)`;
-
-    result.textContent = plustButton;
+    const sum = Number(firstNum.value) + Number(secondNum.value);
+    returnResult(sum);
+  } else if (sign == "-") {
+    const sum = Number(firstNum.value) - Number(secondNum.value);
+    returnResult(sum);
   }
-  //   else if (sign == "-") {
-  //     const minusButton = Number(firstNum.value) - Number(secondNum.value);
 
-  //     result.textContent = minusButton;
-  //   }
+  if (sign == "*") {
+    const sum = Number(firstNum.value) * Number(secondNum.value);
+    returnResult(sum);
+  }
 
-  //   if (sign == "*") {
-  //     const multiplyButton = Number(firstNum.value) * Number(secondNum.value);
-
-  //     result.textContent = multiplyButton;
-  //   }
-
-  //   if (sign == "/") {
-  //     const divideButton = Number(firstNum.value) / Number(secondNum.value);
-
-  //     result.textContent = divideButton;
-  //   }
+  if (sign == "/") {
+    const sum = Number(firstNum.value) / Number(secondNum.value);
+    returnResult(sum);
+  }
 };
-
-// countButton.onclick = function () {
-//   const plustButton = Number(firstNum.value) + Number(secondNum.value);
-
-//   result.textContent = plustButton;
-// };
